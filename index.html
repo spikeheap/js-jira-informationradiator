@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jqplot.css">
+	</head>
+	<body>
+		<div id=toTriage		class="widget wide2x high2x"><div class="result">&nbsp;</div><div class=delta>&nbsp;</div><div class=title>to triage</div></div>
+
+		<div id=newIssues		class=widget><div class="result">&nbsp;</div><div class=delta>&nbsp;</div><div class=title>created</div></div>
+		<div id=updatedIssues 	class=widget><div class="result">&nbsp;</div><div class=delta>&nbsp;</div><div class=title>updated</div></div>
+		<div id=resolvedIssues	class=widget><div class="result">&nbsp;</div><div class=delta>&nbsp;</div><div class=title>resolved</div></div>
+
+		<div id=createdVsResolved class="widget wide2x"><div id="chartdiv" class="jqplot-widget-content"></div></div>
+		
+		<div class="widget wide2x high2x">
+			<table id="neglectedIssues">
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.jqplot.js"></script>
+		<script type="text/javascript" src="js/plugins/jqplot.json2.min.js"></script>
+		<script type="text/javascript" src="js/plugins/jqplot.dateAxisRenderer.min.js"></script>
+		<script type="text/javascript" src="js/plugins/jqplot.canvasTextRenderer.min.js"></script>
+		<script type="text/javascript" src="js/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+		<script type="text/javascript" src="js/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fittext.js"></script>
+		<script type="text/javascript" src="js/jira-connector.js"></script>
+
+	</body>
+</html>

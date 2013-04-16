@@ -1,0 +1,135 @@
+@media screen and (min-width: 600px) {
+	body{
+		background-color: #545454;
+		font-family: Verdana, Arial, serif;
+		padding: 2em;
+	}
+}
+@media screen and (max-width: 600px) {
+	body{
+		background-color: #545454;
+		font-family: Verdana, Arial, serif;
+		padding: 2em;
+		font-size: 0.5em;
+	}
+}
+
+
+.widget{
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 1.5em;
+	height: 1.5em;
+	background-color: #CDCDCD;
+
+
+	font-size: 10em;
+	/*font-weight: bold;*/
+	text-align: center;
+
+	margin: 0.05em;
+	padding: 0.1em;
+
+	-moz-border-radius: 0.1em;
+	-webkit-border-radius: 0.1em;
+	border-radius: 0.1em;
+
+	-moz-box-shadow: 0.05em 0.05em 0.05em #454545;
+	-webkit-box-shadow: 0.05em 0.05em 0.05em #454545;
+	box-shadow: 0.05em 0.05em 0.05em #454545;
+
+}
+
+.widget .result{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.widget .title{
+	display: block;
+	font-size: 0.2em;
+	position: absolute;
+	bottom: 0.1em;
+	width: 100%;
+	text-align: center;
+}
+
+.widget .delta{	
+	position: relative;
+	bottom: 0.1em;
+	font-size: 0.1em;
+}
+
+.gettingBetter.down{
+	background: url('../images/arrow-down-green-128.png') no-repeat green;
+}
+.gettingBetter.up{
+	background: url('../images/arrow-up-green-128.png') no-repeat green;
+}
+
+.gettingWorse.down{
+	background: url('../images/arrow-down-red-128.png') no-repeat red;
+}
+.gettingWorse.up{
+	background: url('../images/arrow-up-red-128.png') no-repeat red;
+}
+
+
+#neglectedIssues{
+	font-size: 1.5em;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+tr:nth-child(even){
+	background-color: #ABABAB;
+}
+tr:nth-child(odd){
+	background-color: #BABABA;
+}
+
+td{
+	font-size: 0.04em;
+	padding: 0.2em;
+	text-align: left;
+}
+
+td.issueKey{
+	font-size:0.02em;
+}
+
+tr td:first-child {
+    -moz-border-radius-topleft: 0.3em;
+    -moz-border-radius-bottomleft: 0.3em;
+    -webkit-border-top-left-radius: 0.3em;
+    -webkit-border-bottom-left-radius: 0.3em;
+
+}
+
+tr td:last-child {
+    -moz-border-radius-topright: 0.3em;
+    -moz-border-radius-bottomright: 0.3em;
+    -webkit-border-top-right-radius: 0.3em;
+    -webkit-border-bottom-right-radius: 0.3em;
+}
+
+.jqplot-widget-content{
+	height:100%;
+	width:100%;
+}
+
+/**
+ * Standard widget formatting classes
+ **/
+.widget.wide2x{
+	width: 3.3em;
+}
+
+.widget.high2x{
+	height: 3.3em;
+}
